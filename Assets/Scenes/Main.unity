@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  Path: Hidden/Shapes/Trebol
   Radius: 2
 --- !u!1 &85781374
 GameObject:
@@ -396,6 +396,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137176459}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &173013804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173013805}
+  - component: {fileID: 173013806}
+  m_Layer: 8
+  m_Name: Canvas2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173013805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173013804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2095038317}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &173013806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173013804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FillColor: {r: 0, g: 0, b: 0, a: 0}
+  Path: Hidden/Shapes/WhormHole
+  TextureChannel0: SpaceImageTexture
+  TextureChannel1: MetalTexture
+  TextureChannel2: 
+  TextureChannel3: 
+  Radius: 2
 --- !u!1 &274892734
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,8 +484,61 @@ Transform:
   - {fileID: 753477247}
   - {fileID: 1398093228}
   - {fileID: 2095038317}
+  - {fileID: 1260824614}
+  - {fileID: 1495692144}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &309613863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309613864}
+  - component: {fileID: 309613865}
+  m_Layer: 8
+  m_Name: Canvas1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309613864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309613863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2095038317}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &309613865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309613863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FillColor: {r: 0, g: 0, b: 0, a: 0}
+  Path: Hidden/Shapes/SunStar
+  TextureChannel0: FourColor
+  TextureChannel1: 
+  TextureChannel2: 
+  TextureChannel3: 
+  Radius: 2
 --- !u!1 &381359319
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +735,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 100, y: 1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1040,7 +1144,7 @@ Transform:
   m_GameObject: {fileID: 819573808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.2, y: 1.8000002, z: -7.3}
+  m_LocalPosition: {x: 3.9, y: 1.8000002, z: -2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1356,11 +1460,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 953255505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938201656de136e4ab586453b27d0b23, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  Path: Hidden/Shapes/TextureGiratory
+  TextureChannel0: SpaceImage
+  TextureChannel1: 
+  TextureChannel2: 
+  TextureChannel3: 
   Radius: 2
 --- !u!1 &998488633
 GameObject:
@@ -1540,12 +1648,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260824613}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000022351739}
-  m_LocalPosition: {x: 0, y: 0, z: -0.51}
-  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -35.5, y: 4, z: -16.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2095038317}
+  m_Father: {fileID: 274892735}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1260824615
 MonoBehaviour:
@@ -1556,11 +1664,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1260824613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938201656de136e4ab586453b27d0b23, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  FillColor: {r: 0, g: 0, b: 0, a: 0}
+  Path: Hidden/Shapes/SunStar
+  TextureChannel0: FourColor
+  TextureChannel1: 
+  TextureChannel2: 
+  TextureChannel3: 
   Radius: 2
 --- !u!850595691 &1338397412
 LightingSettings:
@@ -1758,12 +1870,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495692143}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.51}
-  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
+  m_LocalRotation: {x: -0, y: -0.00000022351739, z: -0, w: 1}
+  m_LocalPosition: {x: -35.5, y: 4, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2095038317}
+  m_Father: {fileID: 274892735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1495692145
 MonoBehaviour:
@@ -1774,11 +1886,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1495692143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938201656de136e4ab586453b27d0b23, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  FillColor: {r: 0, g: 0, b: 0, a: 0}
+  Path: Hidden/Shapes/SunStar
+  TextureChannel0: FourColor
+  TextureChannel1: 
+  TextureChannel2: 
+  TextureChannel3: 
   Radius: 2
 --- !u!1 &1721867923
 GameObject:
@@ -1926,11 +2042,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1733282645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938201656de136e4ab586453b27d0b23, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f89e3de0062cdf4e8e7474c039b5d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  Path: Hidden/Shapes/TextureGiratory
+  TextureChannel0: FourColor
+  TextureChannel1: 
+  TextureChannel2: 
+  TextureChannel3: 
   Radius: 2
 --- !u!1 &1751018334
 GameObject:
@@ -2145,7 +2265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FillColor: {r: 1, g: 0, b: 0, a: 1}
-  Path: Hidden/Shapes/Circle1
+  Path: Hidden/Shapes/Circle3
   Radius: 2
 --- !u!1 &2012725879
 GameObject:
@@ -2273,8 +2393,8 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1260824614}
-  - {fileID: 1495692144}
+  - {fileID: 309613864}
+  - {fileID: 173013805}
   m_Father: {fileID: 274892735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2095038318
